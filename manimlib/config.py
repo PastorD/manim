@@ -171,7 +171,7 @@ def get_module(file_name):
             exec(code, module.__dict__)
             return module
         except Exception as e:
-            print(f"Failed to render scene: {str(e)}")
+            #print(f"Failed to render scene: {str(e)}")
             sys.exit(2)
     else:
         module_name = file_name.replace(os.sep, ".").replace(".py", "")

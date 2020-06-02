@@ -27,10 +27,10 @@ def initialize_directories(config):
             )
         if not os.path.isdir(MEDIA_DIR):
             MEDIA_DIR = "./media"
-        print(
-            f"Media will be written to {MEDIA_DIR + os.sep}. You can change "
-            "this behavior with the --media_dir flag."
-        )
+       # print(
+        #    f"Media will be written to {MEDIA_DIR + os.sep}. You can change "
+        #    "this behavior with the --media_dir flag."
+        #)
     else:
         if config["media_dir"]:
             print(
@@ -268,7 +268,7 @@ STREAMING_PROTOCOL = "tcp"
 STREAMING_IP = "127.0.0.1"
 STREAMING_PORT = "2000"
 STREAMING_CLIENT = "ffplay"
-STREAMING_URL = f"{STREAMING_PROTOCOL}://{STREAMING_IP}:{STREAMING_PORT}?listen"
+STREAMING_URL = "d" #   f"{STREAMING_PROTOCOL}://{STREAMING_IP}:{STREAMING_PORT}?listen"
 STREAMING_CONSOLE_BANNER = """
 Manim is now running in streaming mode. Stream animations by passing
 them to manim.play(), e.g.
